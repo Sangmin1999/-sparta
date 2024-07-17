@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+
+    <style>
+        .container {
+            background-color: rgba(255, 255, 255, 0.4); /* 방명록 색깔 지정*/
+            text-align: center;
+            width: 370px;
+            height: 350px;
+            border-style: ridge;
+            margin-top: 500px; 
+    margin-left: -250px;
+    margin-right: auto;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #179e12, #ffffff);/* 자기 바탕색 지정*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;/*전체 글씨 색깔*/
+        }
+
+        .text1 {
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            line-height: 0.7;
+        }
+
+        .text6 {
+            position: absolute;
+            top: 17%;
+            left: 41%;
+            line-height: 0.7;
+        }
+
+        .text2 {
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            margin-bottom: 20px;
+        }
+
+        .text3 {
+            position: absolute;
+            top: 30%;
+            left: 65%;
+            margin-bottom: 20px;
+        }
+
+        .text4 {
+            position: absolute;
+            top: 60%;
+            left: 40%;
+            margin-bottom: 20px;
+        }
+
+        .text5 {
+            position: absolute;
+            top: 60%;
+            left: 65%;
+            margin-bottom: 20px;
+        }
+        .text7 {
+            position: absolute;
+            top: 51%;
+            left: 13%;
+            margin-bottom: 20px;
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card>img {
+            position: absolute;
+            width: 30%;
+            top: 30%;
+            right: 51%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .menu * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu {
+            width: 300px;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            position: absolute;
+            top: 20px;
+            right: -30px;
+        }
+
+        .menu>li {
+            width: 80%;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            background-color: #000000; /*상단 메뉴바 색깔*/
+        }
+
+        .menu a {
+            color: #fff; /*메뉴 글씨 색깔*/
+        }
+
+        .submenu>li {
+            line-height: 50px;
+            background-color: #d3d3d3; /*서브메뉴 바탕 색깔*/
+        }
+
+        .submenu {
+            height: 0;
+            overflow: hidden;
+            font-family: 'Arial' sans-serif;
+        }
+
+        .menu>li:hover {
+            background-color: #ea07ff; /* 메뉴바에 마우스 포인트 올렸을때 변하는 색깔 */
+            transition-duration: 0.5s;
+        }
+
+        .menu>li:hover .submenu {
+            height: 200px;
+            transition-duration: 1s;
+        }
+        #messages{
+        position: relative;
+        height : 210px;
+        width: 320px;
+        overflow-y:scroll;
+        padding: 10px;
+        border: 1px solid;
+        bottom: 20px;
+        left: 20px;
+
+    }
+    #name{
+        position: relative;
+        right: 110px;
+        bottom: 8px;
+        width: 90px;
+        padding: 8px;
+        border: 1px solid #333;
+        border-radius: 4px;
+    }
+    .message {
+        background: none;
+        border: 1px solid #232121;
+        border-radius: 4px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .message p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+    }
+    textarea {
+        position: relative;
+        display: block;
+        padding: 8px;
+        border: 1px solid #333;
+        border-radius: 4px;
+        height: 20px;
+        width: 190px;
+        bottom: 45px;
+        left: 150px;
+    }
+    button {
+        position: relative;
+        bottom: 40px;
+        padding: 8px;
+        border: 1px solid #333;
+        border-radius: 4px;
+        right: -150px;
+    }
+    button:hover {
+        background-color: #acacb2;
+    }
+    .Background {
+
+padding: 0 0 300px 0;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="text1">
+        <h1 style="font-size : 50px;">이상민</h1>
+
+    </div>
+    <div class="text6">
+        <h2 style="font-size : 30px;">INFP</h2>
+    </div>
+    <div class="text2">
+        <h3 style="font-size : 40px;">성격?</h3>
+        <hr style="border : solid 1px white;width:270px"> <!--화이트 부분을 클릭해서 줄색깔 바꾸기-->
+        <p>~~</p>
+    </div>
+    <div class="text3">
+        <h3 style="font-size : 40px;">취미/특기?</h3>
+        <hr style="border : solid 1px white;width:270px">
+        <ul>
+            <li>순서</li>
+            <li>없는 리스트</li>
+            </ul>
+        <p>~~</p>
+    </div>
+    <div class="text4">
+        <h3 style="font-size : 40px;">장점</h3>
+        <hr style="border : solid 1px white;width:270px">
+        <p>~~</p>
+    </div>
+    <div class="text5">
+        <h3 style="font-size : 40px;">팀원들에게</h3>
+        <hr style="border : solid 1px white;width:270px;">
+        <p>~~</p>
+    </div>
+    <div class="text7">
+        <h3 style="font-size : 20px;">댓글 한번씩만...</h3>
+    </div>
+    <div class="card">
+        <img src="KakaoTalk_20240716_090940601.jpg" width="300px" height="400px" class="card-img" alt="...">
+        <div class="card-img-overlay">
+        </div>
+    </div>
+    <div class="container">
+        <h1></h1>
+        <form id="guestbook-form">
+            <label for=이름:></label>
+            <input type="text" id="name" name="name" placeholder="이름" required>
+            <label for="flaotingTextarea2"></label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                required></textarea>
+            <button id="btn" type="submit" class="btn btn-light">입력</button>
+        </form>
+        <div id="messages"></div>
+        <ul class="menu">
+            <li>
+                <a href="#">소개 메뉴</a>
+                <ul class="submenu">
+                    <li><a href="#">성격</a></li>
+                    <li><a href="#">취미/특기</a></li>
+                    <li><a href="#">장점</a></li>
+                    <li><a href="#">팀원들에게</a></li>
+                </ul>
+            </li>
+            <script>document.addEventListener('DOMContentLoaded', function () {
+                    const form = document.getElementById('guestbook-form');
+                    const messagesDiv = document.getElementById('messages');
+
+                    form.addEventListener('submit', function (e) {
+                        e.preventDefault(); // 폼 제출 시 페이지 새로고침 방지
+                        const name = document.getElementById('name').value; //이름 변수
+                        const message = document.getElementById('floatingTextarea2').value; // 메시지 변수
+
+                        if (name && message) {
+                            const messageElement = document.createElement('div'); // messageElement = div 태그 생성 후 집어넣기 
+                            messageElement.classList.add('message'); // 클래스 넣기
+
+
+                            //박지민
+                            messageElement.innerHTML = "<p><strong>" + name + ": </strong></p>" + "<p>" + message + "</p>";  // div 태그가 들어간 messageElement에 html 작성
+                            messagesDiv.appendChild(messageElement);
+
+                            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+
+                            // 입력 필드 비우기
+                            document.getElementById('name').value = '';
+                            document.getElementById('floatingTextarea2').value = '';
+                        } else {
+                            alert('이름과 메시지를 모두 입력해 주세요.');
+                        }
+                    });
+                });
+            </script>
+
+</body>
+
+</html>
