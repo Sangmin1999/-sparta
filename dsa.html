@@ -15,12 +15,6 @@
             font-family: Arial, sans-serif;
             color: white;
         }
-        .bar {
-            height: 10px; /* 스킬바의 높이 설정 */
-            background: white; /* 스킬바의 배경색을 흰색으로 설정 */
-            margin-left: 10px; /* 스킬바와 텍스트 사이의 간격 설정 */
-            flex: 1; /* 스킬바를 가능한 공간에 맞게 확장 */
-        }
         .text1{
             position: absolute;
         top: 10%;
@@ -71,6 +65,54 @@
         transform: translate(-50%, -50%);
         border-radius: 10px;
     }
+    li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .menu * {
+            padding: 0;
+            margin: 0;
+        }
+        .menu {
+  width: 400px;
+  overflow: hidden;
+  margin: 150px auto;
+  font-family: 'Arial' sans-serif;
+  position: absolute;
+            top: -150px; /* 화면 위쪽에서의 위치 */
+            right: -80px; /* 화면 오른쪽에서의 위치 */
+}
+.menu > li {
+  width: 80%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #000000;
+}
+.menu a {
+  color: #fff;
+}
+.submenu > li {
+  line-height: 50px;
+  background-color: #d3d3d3;
+}
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+  font-family: 'Arial' sans-serif;
+}
+.menu > li:hover {
+  background-color: #000000;
+  transition-duration: 0.5s;
+}
+.menu > li:hover .submenu {
+  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
+}
+
     </style>
 </head>
 <body>
@@ -107,5 +149,15 @@
     <div class="card-img-overlay">
     </div>
 </div>
+<ul class="menu">
+    <li>
+      <a href="#">MENU1</a>
+      <ul class="submenu">
+        <li><a href="#">submenu01</a></li>
+        <li><a href="#">submenu02</a></li>
+        <li><a href="#">submenu03</a></li>
+        <li><a href="#">submenu04</a></li>
+      </ul>
+    </li>
 </body>
 </html>
