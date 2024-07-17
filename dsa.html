@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,149 +16,177 @@
             font-family: Arial, sans-serif;
             color: white;
         }
-        .text1{
+
+        .text1 {
             position: absolute;
-        top: 10%;
-        left: 40%;
-        line-height: 0.7;
+            top: 10%;
+            left: 40%;
+            line-height: 0.7;
         }
-        .text6{
+
+        .text6 {
             position: absolute;
-        top: 17%;
-        left: 41%;
-        line-height: 0.7;
+            top: 17%;
+            left: 41%;
+            line-height: 0.7;
         }
-        .text2{
+
+        .text2 {
             position: absolute;
-        top: 30%;
-        left: 40%;
-        margin-bottom: 20px;
+            top: 30%;
+            left: 40%;
+            margin-bottom: 20px;
         }
-        .text3{
+
+        .text3 {
             position: absolute;
-        top: 30%;
-        left: 65%;
-        margin-bottom: 20px;
+            top: 30%;
+            left: 65%;
+            margin-bottom: 20px;
         }
-        .text4{
+
+        .text4 {
             position: absolute;
-        top: 60%;
-        left: 40%;
-        margin-bottom: 20px;
+            top: 60%;
+            left: 40%;
+            margin-bottom: 20px;
         }
-        .text5{
+
+        .text5 {
             position: absolute;
-        top: 60%;
-        left: 65%;
-        margin-bottom: 20px;
+            top: 60%;
+            left: 65%;
+            margin-bottom: 20px;
         }
-        .card{
-        width: 300px;
-        height: 400px;
-        overflow: hidden;
-        border-radius: 10px;
-    }
-    .card>img {
-        position: absolute;
-        width: 30%;
-        top: 30%;
-        right: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 10px;
-    }
-    li {
+        .text7 {
+            position: absolute;
+            top: 55%;
+            right: 77%;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card>img {
+            position: absolute;
+            width: 30%;
+            top: 35%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+
+        li {
             list-style: none;
         }
+
         a {
             text-decoration: none;
             font-size: 14px;
         }
+
         .menu * {
             padding: 0;
             margin: 0;
         }
-        .menu {
-  width: 400px;
-  overflow: hidden;
-  margin: 150px auto;
-  font-family: 'Arial' sans-serif;
-  position: absolute;
-            top: -150px; /* 화면 위쪽에서의 위치 */
-            right: -80px; /* 화면 오른쪽에서의 위치 */
-}
-.menu > li {
-  width: 80%; /*20*5=100%*/
-  float: left;
-  text-align: center;
-  line-height: 40px;
-  background-color: #000000;
-}
-.menu a {
-  color: #fff;
-}
-.submenu > li {
-  line-height: 50px;
-  background-color: #d3d3d3;
-}
-.submenu {
-  height: 0; /*ul의 높이를 안보이게 처리*/
-  overflow: hidden;
-  font-family: 'Arial' sans-serif;
-}
-.menu > li:hover {
-  background-color: #000000;
-  transition-duration: 0.5s;
-}
-.menu > li:hover .submenu {
-  height: 200px; /*서브메뉴 li한개의 높이 50*5*/
-  transition-duration: 1s;
-}
 
+        .menu {
+            width: 300px;
+            overflow: hidden;
+            margin: 150px auto;
+            font-family: 'Arial' sans-serif;
+            position: absolute;
+            top: -150px;
+            right: -60px;
+        }
+
+        .menu>li {
+            width: 80%;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            background-color: #000000;
+        }
+
+        .menu a {
+            color: #fff;
+        }
+
+        .submenu>li {
+            line-height: 50px;
+            background-color: #d3d3d3;
+        }
+
+        .submenu {
+            height: 0;
+            overflow: hidden;
+            font-family: 'Arial' sans-serif;
+        }
+
+        .menu>li:hover {
+            background-color: #000000;
+            transition-duration: 0.5s;
+        }
+
+        .menu>li:hover .submenu {
+            height: 200px;
+            transition-duration: 1s;
+        }
     </style>
 </head>
+
 <body>
     <div class="text1">
-    <h1 style = "font-size : 50px;">이상민</h1>
-    
-</div>
-<div class="text6">
-    <h2 style = "font-size : 30px;">INFP</h2>
-</div>
-<div class="text2">
-    <h3 style = "font-size : 40px;">성격?</h3>
-    <hr style="border : solid 1px white;width:270px">
-    <p>~~</p>
-</div>
-<div class="text3">
-    <h3 style = "font-size : 40px;">취미/특기?</h3>
-    <hr style="border : solid 1px white;width:270px">
-    <p>~~</p>
-</div>
-<div class="text4">
-    <h3 style = "font-size : 40px;">장점</h3>
-    <hr style="border : solid 1px white;width:270px">
-    <p>~~</p>
-</div>
-<div class="text5">
-    <h3 style = "font-size : 40px;">팀원들에게</h3>
-    <hr style="border : solid 1px white;width:270px;">
-    <p>~~</p>
-</div>
-<div class="card">
-    <img src="KakaoTalk_20240716_090940601.jpg"
-        width="300px" height="400px" class="card-img" alt="...">
-    <div class="card-img-overlay">
+        <h1 style="font-size : 50px;">이상민</h1>
+
     </div>
-</div>
-<ul class="menu">
-    <li>
-      <a href="#">MENU1</a>
-      <ul class="submenu">
-        <li><a href="#">submenu01</a></li>
-        <li><a href="#">submenu02</a></li>
-        <li><a href="#">submenu03</a></li>
-        <li><a href="#">submenu04</a></li>
-      </ul>
-    </li>
+    <div class="text6">
+        <h2 style="font-size : 30px;">INFP</h2>
+    </div>
+    <div class="text2">
+        <h3 style="font-size : 40px;">성격?</h3>
+        <hr style="border : solid 1px white;width:270px">
+        <p>~~</p>
+    </div>
+    <div class="text3">
+        <h3 style="font-size : 40px;">취미/특기?</h3>
+        <hr style="border : solid 1px white;width:270px">
+        <p>~~</p>
+    </div>
+    <div class="text4">
+        <h3 style="font-size : 40px;">장점</h3>
+        <hr style="border : solid 1px white;width:270px">
+        <p>~~</p>
+    </div>
+    <div class="text5">
+        <h3 style="font-size : 40px;">팀원들에게</h3>
+        <hr style="border : solid 1px white;width:270px;">
+        <p>~~</p>
+    </div>
+    <div class="text7">
+        <h3 style="font-size : 20px;">간단한 소개</h3>
+        <p>~~</p>
+        </div>
+    <div class="card">
+        <img src="KakaoTalk_20240716_090940601.jpg" width="300px" height="400px" class="card-img" alt="...">
+        <div class="card-img-overlay">
+        </div>
+    </div>
+    <ul class="menu">
+        <li>
+            <a href="#">MENU1</a>
+            <ul class="submenu">
+                <li><a href="#">submenu01</a></li>
+                <li><a href="#">submenu02</a></li>
+                <li><a href="#">submenu03</a></li>
+                <li><a href="#">submenu04</a></li>
+            </ul>
+        </li>
 </body>
+
 </html>
